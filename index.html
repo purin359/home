@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>home</title>
+<title>にゃんこツール集</title>
 
 <style>
 body{
@@ -20,53 +20,47 @@ h1{
 }
 
 .section{
-  max-width:800px;
-  margin:0 auto 28px auto;
+  max-width:700px;
+  margin:0 auto 30px auto;
 }
 
 .sectionTitle{
-  font-size:28px;
+  font-size:26px;
   font-weight:bold;
-  margin-bottom:14px;
-  border-left:8px solid #4CAF50;
-  padding-left:12px;
+  margin-bottom:10px;
+  border-left:6px solid #4CAF50;
+  padding-left:10px;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:14px;
-}
-  
-.card{
-  display:block;
+.list{
   background:white;
-  border:2px solid #ddd;
+  border:1px solid #ddd;
   border-radius:10px;
-  padding:10px;
+  overflow:hidden;
+}
+
+.list a{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 16px;
   text-decoration:none;
-  color:inherit;
-  transition:.15s;
+  color:#222;
+  border-bottom:1px solid #eee;
+  transition:.1s;
 }
 
-.cardTitle{
-  font-size:18px;
-  font-weight:bold;
-  text-align:center;
-}
-  
-.card:hover{
-  transform:translateY(-3px);
-  border-color:#4CAF50;
-  box-shadow:0 4px 12px rgba(0,0,0,.12);
+.list a:last-child{
+  border-bottom:none;
 }
 
-  @media (max-width: 600px){
-  .grid{
-    grid-template-columns:1fr;
-  }
+.list a:hover{
+  background:#f0f7f0;
 }
-  
+
+.arrow{
+  color:#888;
+}
 </style>
 </head>
 
@@ -76,65 +70,86 @@ h1{
 
 <!-- 図鑑 -->
 <div class="section">
+
   <div class="sectionTitle">図鑑</div>
 
-  <div class="grid">
+  <div class="list">
 
-    <a class="card" href="../zukan/ally.html">
-      <div class="cardTitle">味方文字検索</div>
+    <a href="../zukan/ally.html">
+      味方文字検索
+      <span class="arrow">▶</span>
     </a>
 
-    <a class="card" href="../zukan/enemy.html">
-      <div class="cardTitle">敵文字検索</div>
+    <a href="../zukan/enemy.html">
+      敵文字検索
+      <span class="arrow">▶</span>
     </a>
 
-    <a class="card" href="../zukan/integrated.html">
-      <div class="cardTitle">敵味方統合文字検索</div>
+    <a href="../zukan/integrated.html">
+      敵味方統合文字検索
+      <span class="arrow">▶</span>
     </a>
 
-    <a class="card" href="../zukan/quiz.html">
-      <div class="cardTitle">説明文クイズ</div>
+
+    <a href="../zukan/quiz.html">
+      説明文クイズ
+      <span class="arrow">▶</span>
     </a>
 
   </div>
+
 </div>
 
 <!-- レジェンド -->
 <div class="section">
+
   <div class="sectionTitle">レジェンド</div>
 
-  <div class="grid">
+  <div class="list">
 
-    <a class="card" href="../Legend-enemy/">
-      <div class="cardTitle">敵出現一覧</div>
+    <a href="../Legend-enemy/">
+      敵出現一覧
+      <span class="arrow">▶</span>
     </a>
 
-    <a class="card" href="../Legend-enemy/tools.html">
-      <div class="cardTitle">その他</div>
+    <a href="../Legend-enemy/allStages.html">
+      ステージ一覧
+      <span class="arrow">▶</span>
     </a>
 
-    <a class="card" href="../Legend-enemy/quiz.html">
-      <div class="cardTitle">ステージ当てクイズ</div>
+    <a href="../Legend-enemy/tools.html">
+      その他
+      <span class="arrow">▶</span>
+    </a>
+
+    <a href="../Legend-enemy/quiz.html">
+      ステージ当てクイズ
+      <span class="arrow">▶</span>
     </a>
 
   </div>
+
 </div>
 
 <!-- 本能 -->
 <div class="section">
+
   <div class="sectionTitle">本能</div>
 
-  <div class="grid">
+  <div class="list">
 
-    <a class="card" href="../Talents/">
-      <div class="cardTitle">本能一覧</div>
+    <a href="../Talents/">
+      本能一覧
+      <span class="arrow">▶</span>
     </a>
 
-    <a class="card" href="../Talents/Tools.html">
-      <div class="cardTitle">その他</div>
+    <a href="../Talents/Tools.html">
+      その他
+      <span class="arrow">▶</span>
     </a>
 
   </div>
+
 </div>
 
 </body>
